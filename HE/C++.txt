@@ -1,0 +1,28 @@
+C++ :-
+
+What is this?
+
+The ‘this’ pointer is passed as a hidden argument to all nonstatic member function calls and is available as a local variable within the body of all nonstatic functions. ‘this’ pointer is a constant pointer that holds the memory address of the current object. ‘this’ pointer is not available in static member functions as static member functions can be called without any object (with class name).
+For a class X, the type of this pointer is ‘X* const’. Also, if a member function of X is declared as const, then the type of this pointer is ‘const X *const’.
+
+If the member function of a class X is declared const, the type of this is const X*, if the member function is declared volatile, the type of this is volatile X*, and if the member function is declared const volatile, the type of this is const volatile X*.
+
+What is volatile?
+Volatile informs the compiler that it should not assume that the value it just put in the variable marked as volatile will be there next time it uses it... that it must check the current value before using it again.
+
+One example is if the variable represents a memory location that might be changed by another process.
+
+Here's an example (been ages since I did C++ so please forgive any minor syntax issues):
+
+volatile int x;
+
+int DoSomething()
+{
+    x = 1;
+
+    DoSomeOtherStuff();
+
+    return x+1; // Don't just return 2 because we stored a 1 in x.  
+                // Check to get its current value
+}
+

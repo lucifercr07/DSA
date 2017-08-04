@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@mipmap/background_one"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prasha.daa.SecondActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QuickSort"
+                android:id="@+id/button4"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="MergeSort"
+                android:id="@+id/button5"
+                android:layout_below="@+id/button4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimSort"
+                android:id="@+id/button6"
+                android:layout_below="@+id/button5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="HeapSort"
+                android:id="@+id/button7"
+                android:layout_below="@+id/button6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BubbleSort"
+                android:textStyle="bold"
+                android:id="@+id/button8"
+                android:layout_below="@+id/button7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="InsertionSort"
+                android:textStyle="bold"
+                android:id="@+id/button9"
+                android:layout_below="@+id/button8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="SelectionSort"
+                android:id="@+id/button10"
+                android:layout_below="@+id/button9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TreeSort"
+                android:id="@+id/button11"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ShellSort"
+                android:id="@+id/button12"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BucketSort"
+                android:id="@+id/button13"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadixSort"
+                android:id="@+id/button14"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:fontFamily="casual"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CountingSort"
+                android:id="@+id/button15"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                tools:fontFamily="casual"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CubeSort"
+                android:id="@+id/button16"
+                android:layout_below="@+id/button10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                tools:fontFamily="casual"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:text="---Sorting Algorithms---"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView16" />
+
+</RelativeLayout>

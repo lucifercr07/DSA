@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	//code
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    string num;
+	    cin>>num;
+	    vector<int> vec(num.length());
+	    for(int i=0;i<num.length();i++)
+	    {
+	        vec[i]=num[i];
+	    }
+	    vector<int> vec1(vec);
+	    reverse(vec1.begin(),vec1.end());
+	    if(equal(vec.begin(),vec.end(),vec1.begin()))
+	        cout<<"Yes"<<endl;
+	    else
+	        cout<<"No"<<endl;
+	}
+	return 0;
+}
