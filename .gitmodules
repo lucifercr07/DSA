@@ -1,3 +1,0 @@
-[submodule "third-party/grpc"]
-	path = third-party/grpc
-	url = git@gitlab.eng.vmware.com:core-build/mirrors_github_grpc.git
